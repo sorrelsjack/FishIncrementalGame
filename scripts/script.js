@@ -21,5 +21,5 @@ const changeButtonText = () => {
 
 const setFishAnimation = () => {
     const fs = document.getElementById('fish-transform');
-    fs.setAttribute('values', `-50 50;-50 -20;150 0;${document.getElementById('fish-container').width.baseVal.value} -20`)
+    fs.setAttribute('values', `-50 50;-50 -20;150 0;${document.documentElement.clientWidth} -20`)
 }
