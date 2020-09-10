@@ -6,7 +6,7 @@ const handlePurchaseFishClicked = () => {
     fish = fish += 1;
     money = money -= fishCost;
 
-    moneyContainer.innerHTML = money;
+    moneyContainer.innerHTML = `$${money}`;
     fishAmountContainer.innerHTML = fish;
     buyOneFishButton.innerHTML = `Buy 1 Fish for $${fishCost}`
 }
@@ -19,6 +19,6 @@ const handlePurchaseFishFetcherClicked = () => {
     fishFetcher = fishFetcher += 1;
     money = money -= fishFetcherCost;
 
-    moneyContainer.innerHTML = money;
+    moneyContainer.innerHTML = `$${money}`;
     buyOneFishFetcherButton.innerHTML = `Buy 1 Fish Fetcher for $${fishFetcherCost}`
 }
