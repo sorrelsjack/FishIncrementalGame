@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
+    <script src="scripts/elements.js"></script>
+    <script src="scripts/events.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
+
 <body onload="handlePageLoad()">
-    <div>
+    <div class="wrapper">
         <h1>Fishtropolis</h1>
-        <span>You have this many dollars:</span>
-        <div id="moneyContainer">0</div>
-        <span>You have this many fish:</span>
-        <div id="fishAmountContainer">0</div>
+        <div class="main-info-container">
+            <span>You have this much money:</span>
+            <div id="moneyContainer">$0</div>
+        </div>
+        <div class="main-info-container">
+            <span>You have this many fish:</span>
+            <div id="fishAmountContainer">0</div>
+        </div>
         <div class="upgrade" id="buyOneFishButton" onclick="handlePurchaseFishClicked()">
             Buy 1 Fish for $5
         </div>
@@ -19,5 +27,16 @@
             Buy 1 Fish Fetcher for $12
         </div>
     </div>
+    <svg class="fish-container" id="fish-container" height=100>
+        <path
+            d="M100,100 L104,94 L110,98 L105,96 L106,103 L112,99 L117,100 L112,99 L116,103 L120,101 A80,200,-30,0,0,148,94 L148,92 L143,94 L147,90 A80,150,0,0,0,125,84 L117,82 L110,89 L100,87 L97,87 L100,100"
+            fill="#b51" transform="scale(.7) translate(-100,0) ">
+            <animate attributeName="d" dur=".6s" repeatCount="indefinite"
+                values="M108,100 L112,94 L116,98 L110,96 L111,103 L116,99 L119,100 L115,99 L119,103 L120,101 A80,200,-30,0,0,148,90 L147,94 L147,92 L148,90 A80,150,0,0,0,121,84 L119,82 L114,89 L106,87 L105,87 L108,100;M100,100 L104,94 L110,98 L105,96 L106,103 L112,99 L117,100 L112,99 L116,103 L120,101 A80,200,-30,0,0,148,94 L148,92 L143,94 L147,90 A80,150,0,0,0,125,84 L117,82 L110,89 L100,87 L97,87 L100,100;M108,100 L112,94 L116,98 L110,96 L111,103 L116,99 L119,100 L115,99 L119,103 L120,101 A80,200,-30,0,0,147,94 L147,92 L143,94 L148,90 A80,150,0,0,0,121,84 L119,82 L114,89 L106,87 L105,87 L108,100;">
+            </animate>
+            <animateMotion attributeName="transform" type="translate" begin="0s"
+                dur="30s" repeatCount="indefinite" id="fish-transform" />
+        </path>
+    </svg>
 </body>
 </html>

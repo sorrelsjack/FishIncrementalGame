@@ -1,13 +1,24 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 h1 {
     text-align: center;
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-info-container {
+    margin-bottom: 10px;
+}
+.main-info-container div {
+    margin-top: 5px;
+}
+.fish-container {
+    width: 100vw;
+}
 .upgrade {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 20px;
     background-color: cyan;
     text-align: center;
