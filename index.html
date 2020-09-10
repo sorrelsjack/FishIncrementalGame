@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onload="handlePageLoad()">
+    <div>
+        <h1>Fishtropolis</h1>
+        <span>You have this many dollars:</span>
+        <div id="moneyContainer">0</div>
+        <span>You have this many fish:</span>
+        <div id="fishAmountContainer">0</div>
+        <div class="upgrade" id="buyOneFishButton" onclick="handlePurchaseFishClicked()">
+            Buy 1 Fish for $5
+        </div>
+        <div class="upgrade" id="buyOneFishFetcherButton" onclick="handlePurchaseFishFetcherClicked()">
+            Buy 1 Fish Fetcher for $12
+        </div>
+    </div>
+</body>
+</html>
