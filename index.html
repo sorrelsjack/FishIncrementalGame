@@ -17,15 +17,25 @@
             <span>You have this many fish:</span>
             <div id="fishAmountContainer">0</div>
         </div>
-        <div class="upgrade" id="buyOneFishButton" onclick="handlePurchaseOneFishClicked()">
-            Buy 1 Fish
+        <div class="upgrade-container">
+            <div class="upgrade-button" id="buyFishButton" onclick="handlePurchaseOneFishClicked()">
+                Buy Fish
+            </div>
         </div>
-        <div class="upgrade" id="buyOneFishFetcherButton" onclick="handlePurchaseFishFetcherClicked()">
-            Buy 1 Fish Fetcher for 10 Fish
+        <div class="hidden upgrade-container" id="fishFetcherContainer">
+            <div class="upgrade-button" id="buyFishFetcherButton" onclick="handlePurchaseFishFetcherClicked()">
+                Buy Fish Fetcher for 10 Fish
+            </div>
+            <div class="upgrade-counter" id="fishFetcherCounter">0</div>
+        </div>
+        <div class="hidden upgrade-container" id="breedingTankContainer">
+            <div class="upgrade-button" id="buyBreedingTankButton" onclick="handlePurchaseBreedingTankClicked()">
+                Buy Breeding Tank for 100 Fish
+            </div>
+            <div class="upgrade-counter" id="breedingTankCounter">0</div>
         </div>
     </div>
     <svg class="fish-container" id="fish-container" height=200>
-        <rect fill="cyan" id="fish-tank"></rect>
         <path
             d="M100,100 L104,94 L110,98 L105,96 L106,103 L112,99 L117,100 L112,99 L116,103 L120,101 A80,200,-30,0,0,148,94 L148,92 L143,94 L147,90 A80,150,0,0,0,125,84 L117,82 L110,89 L100,87 L97,87 L100,100"
             fill="#b51" transform="scale(.7) translate(-100,0) ">

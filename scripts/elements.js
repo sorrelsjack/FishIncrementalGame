@@ -1,9 +1,23 @@
 let fishAmountContainer = null;
-let buyOneFishButton = null;
-let buyOneFishFetcherButton = null;
+let buyFishButton = null;
+let buyFishFetcherButton = null;
+let buyBreedingTankButton = null;
+
+let fishFetcherContainer = null;
+let breedingTankContainer = null;
+
+let fishFetcherCounter = null;
+let breedingTankCounter = null;
 
 const initializeElements = () => {
     fishAmountContainer = document.getElementById('fishAmountContainer');
-    buyOneFishButton = document.getElementById('buyOneFishButton');
-    buyOneFishFetcherButton = document.getElementById('buyOneFishFetcherButton');
+    buyFishButton = document.getElementById('buyFishButton');
+    buyFishFetcherButton = document.getElementById('buyFishFetcherButton');
+    buyBreedingTankButton = document.getElementById('buyBreedingTankButton');
+
+    fishFetcherContainer = document.getElementById('fishFetcherContainer');
+    breedingTankContainer = document.getElementById('breedingTankContainer');
+
+    fishFetcherCounter = document.getElementById('fishFetcherCounter');
+    breedingTankCounter = document.getElementById('breedingTankCounter');
 }

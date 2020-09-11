@@ -6,6 +6,10 @@ body {
 }
 h1 {
     text-align: center;
+    color: #152238;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #5cdcff;
 }
 .wrapper {
     display: flex;
@@ -23,10 +27,29 @@ h1 {
 .fish-container {
     width: 100vw;
 }
-.upgrade {
-    min-width: 250px;
-    margin: 10px 0;
-    padding: 20px;
-    background-color: cyan;
+.hidden {
+    display: none;
+}
+.upgrade-container {
+    margin: 5px 0;
     text-align: center;
+    -webkit-user-select:none; 
+    -webkit-touch-callout:none; 
+    -moz-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none;   
+}
+.upgrade-button {
+    float: left;
+    background-color: #b7410e;
+    color: white;
+    padding: 20px;
+    min-width: 250px; 
+}
+.upgrade-counter {
+    float: right;
+    background-color: greenyellow;
+    padding: 20px;
+    margin-left: 5px;
+    min-width: 50px;
 }
