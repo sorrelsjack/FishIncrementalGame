@@ -6,18 +6,27 @@ let fishFetcher = 0;
 // Different types of fish maybe?
 
 // TODO: Maybe as the number of fish increases, we can have svg fish swim by
+// TODO: Disable buttons if you don't have enough fish to trade for them
 const handlePageLoad = () => {
     initializeElements();
+    setFishTank();
     setFishAnimation();
     setInterval(changeButtonText, 1000);
 }
 
 const changeButtonText = () => {
-    fish = fish += (fishFetcher * 2) + 1;
+    fish = fish += (fishFetcher * 2);
     fishAmountContainer.innerHTML = fish;
 }
 
 const setFishAnimation = () => {
     const fs = document.getElementById('fish-transform');
     fs.setAttribute('values', `-50 50;-50 -20;150 0;${document.documentElement.clientWidth} -20`)
+}
+
+const setFishTank = () => {
+    const tank = document.getElementById('fish-tank');
+    tank.setAttribute('height', 200);
+    tank.setAttribute('width', document.documentElement.clientWidth);
+    tank.style.fill = 'rgba(0, 255, 255, 0.1)';
 }
