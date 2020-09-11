@@ -1,8 +1,9 @@
-let money = 0;
 let fish = 0;
 let fishFetcher = 0;
 
 // Fish borrowed from https://codepen.io/Astrak/pen/MYVZVo
+// Hmmmm. Can we do away with money and make fish the currency? We can be breeding fish and then we can trade those fish for filters and supplies to better water quality and increase number of fish
+// Different types of fish maybe?
 
 // TODO: Maybe as the number of fish increases, we can have svg fish swim by
 const handlePageLoad = () => {
@@ -12,10 +13,7 @@ const handlePageLoad = () => {
 }
 
 const changeButtonText = () => {
-    money = money += 1;
-    fish = fish += (fishFetcher * 2);
-
-    moneyContainer.innerHTML = `$${money}`;
+    fish = fish += (fishFetcher * 2) + 1;
     fishAmountContainer.innerHTML = fish;
 }
 
